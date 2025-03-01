@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  docusaurus:
+    container_name: docusaurus
+    build:
+      context: ./.Docker
+    ports:
+      - "3000:3000"
+    working_dir: /app
+    volumes:
+      - .:/app
+    # command: npm start
+    tty: true
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - PORT=3000
