@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "My Site",
-  tagline: "Dinosaurs are cool",
+  tagline: "Dcousaurusで作ったサンプル",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -102,7 +102,8 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "ドキュメントページ",
+          to: "docs/put-file"
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
